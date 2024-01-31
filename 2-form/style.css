@@ -1,0 +1,49 @@
+body {
+    background:
+        linear-gradient(45deg, #F298DE, #FDC5C5),
+        linear-gradient(45deg, #FFA5A5, #FFFFFF);
+}
+
+main {
+    background-color: #FFFEFE;
+
+}
+
+h1 {
+    color: #333333;
+    font-size: 36px;
+
+}
+
+div {
+    color: #666666;
+    font-size: 18px;
+
+}
+
+a {
+    color: #089FE0;
+    font-size: 18px;
+}
+
+label {
+    font-size: 16px;
+    color: #333333;
+    background-color: #FFFFFF;
+}
+
+input {
+    background-color: #F5F5F5;
+    font-size: 16px;
+
+}
+
+button {
+    background-color: #089FE0;
+    color: #FFFFFF;
+    font-size: 18px;
+}
+
+span {
+    font-size: 14px;
+}
