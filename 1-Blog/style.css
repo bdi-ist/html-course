@@ -1,0 +1,169 @@
+* {
+    box-sizing: border-box;
+
+    p {
+        margin: 0;
+    }
+}
+
+body {
+    margin: 0;
+}
+
+nav {
+    width: 100%;
+    padding: 81px auto;
+    margin-bottom: 80px;
+}
+
+nav ul {
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+        max-width: 10%;
+    }
+}
+
+.logo {
+    margin: 80px 70px 79px 11px;
+}
+
+header input {
+    width: 224px;
+    height: 40px;
+    border-radius: 100px;
+    margin: 71px 0px 69px 0px;
+    border: 1px solid #1F2937;
+    background-color: #1F2937;
+    opacity: 60%;
+}
+
+.background {
+    background: linear-gradient(180deg, #374151 0%, #111827 100%);
+    width: 1440px;
+    height: 1516px;
+}
+
+.logo {
+    font-family: Roboto;
+    font-size: 18px;
+    color: #FFF;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.menu {
+    font-family: Roboto;
+    font-size: 16px;
+    color: #FFF;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.menu {
+    font-family: Roboto;
+    font-size: 16px;
+    color: #FFF;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.info {
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    opacity: 0.6;
+    text-align: center;
+    margin: 0 0 14px 0;
+}
+
+.h1 {
+    color: #FFF;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    width: 525px;
+    margin: 0 auto 30px auto;
+}
+
+.authorName {
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    margin: 0 auto 28px auto;
+}
+
+.position {
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    opacity: 0.6;
+}
+
+.mainImage {
+    width: 896px;
+    height: 594px;
+    flex-shrink: 0;
+    border-radius: 5px;
+    background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+    alt: "computer";
+    text-align: center;
+    display: block;
+    margin: 0 auto 69px auto;
+}
+
+.theses {
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    width: 708px;
+    height: 101px;
+    margin: 0 auto 185px auto;
+}
+
+.article {
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    width: 708px;
+    height: 281px;
+    margin: 0 auto 103px auto;
+
+    a {
+        text-decoration: underline;
+    }
+}
+
+.footer {
+    color: #FFF;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    opacity: 0.6;
+    width: 226px;
+    height: 28px;
+    margin: 0 auto 77px auto;
+}

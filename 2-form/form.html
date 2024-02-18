@@ -6,32 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Регистрация</title>
     <link rel="SHORTCUT ICON" href="/1-Blog/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/2-form/style.css">
 </head>
 
 <body>
-    <div>
-        <h1>Регистрация</h1>
-    </div>
-    <div>У вас уже есть аккаунт? <a href="#">Войти</a></div>
-    <br>
-    <form action="#">
+    <main>
+
         <div>
-            <label for="company">Моя компания</label>
-            <input type="text" id="company" name="company" placeholder="Моя компания">
+            <h1>Регистрация</h1>
         </div>
+        <div>У вас уже есть аккаунт? <a href="#">Войти</a></div>
         <br>
-        <div>
-            <input type="text" id="firstName" name="firstName" placeholder="Имя">
-            <input type="text" id="secondName" name="secondName" placeholder="Фамилия">
-        </div>
-        <div>
-            <input type="email" id="email" name="email" placeholder="E-mail">
-        </div>
-        <button>Зарегистрироваться</button>
-        <div>
-            <input type="checkbox" id="terms" name="terms"> Я прочитал и принимаю <a href="#">Условия пользования</a>
-        </div>
-    </form>
+        <form action="#">
+            <div>
+                <label for="company">Моя компания</label>
+                <input type="text" id="company" name="company" placeholder="Моя компания">
+            </div>
+            <br>
+            <div>
+                <input type="text" id="firstName" name="firstName" placeholder="Имя">
+                <input type="text" id="secondName" name="secondName" placeholder="Фамилия">
+            </div>
+            <div>
+                <input type="email" id="email" name="email" placeholder="E-mail">
+            </div>
+            <button>Зарегистрироваться</button>
+            <div>
+                <input type="checkbox" id="terms" name="terms"> <span>Я прочитал и принимаю <a href="#">Условия
+                        пользования</a> </span>
+            </div>
+        </form>
+    </main>
 </body>
 
 </html>
