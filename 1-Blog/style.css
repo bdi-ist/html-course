@@ -7,13 +7,64 @@
 }
 
 body {
+    background: linear-gradient(180deg, #374151 0%, #111827 100%);
+    width: 1440px;
+    height: 1516px;
     margin: 0;
+}
+
+
+/* кажется что намудрил и запутался со всеми флексами.
+на лекциях вроде понятно, а тут что-то запутался со всем :)
+надеюсь вектор мышления верен))
+*/
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 81px 0 80px 0;
+
+}
+
+.header .menu {
+    display: flex;
+}
+
+.header .menu ul {
+    display: flex;
+    gap: 70px;
+    align-items: center;
+}
+
+
+
+header input {
+    width: 224px;
+    height: 40px;
+    border-radius: 100px;
+    /* margin: 71px 0px 69px 0px; */
+    border: 1px solid #1F2937;
+    background-color: #1F2937;
+    opacity: 60%;
+}
+
+
+.menu {
+    font-family: Roboto;
+    font-size: 16px;
+    color: #FFF;
+    font-weight: 400;
+    line-height: normal;
 }
 
 nav {
     width: 100%;
-    padding: 81px auto;
-    margin-bottom: 80px;
+
+    img {
+        width: 35px;
+        height: 35px;
+    }
 }
 
 nav ul {
@@ -28,48 +79,16 @@ nav ul {
 }
 
 .logo {
-    margin: 80px 70px 79px 11px;
-}
-
-header input {
-    width: 224px;
-    height: 40px;
-    border-radius: 100px;
-    margin: 71px 0px 69px 0px;
-    border: 1px solid #1F2937;
-    background-color: #1F2937;
-    opacity: 60%;
-}
-
-.background {
-    background: linear-gradient(180deg, #374151 0%, #111827 100%);
-    width: 1440px;
-    height: 1516px;
-}
-
-.logo {
     font-family: Roboto;
     font-size: 18px;
     color: #FFF;
     font-weight: 400;
     line-height: normal;
+    flex-basis: 90px;
+    /* margin: 80px 70px 79px 11px; */
 }
 
-.menu {
-    font-family: Roboto;
-    font-size: 16px;
-    color: #FFF;
-    font-weight: 400;
-    line-height: normal;
-}
 
-.menu {
-    font-family: Roboto;
-    font-size: 16px;
-    color: #FFF;
-    font-weight: 400;
-    line-height: normal;
-}
 
 .info {
     color: #FFF;
