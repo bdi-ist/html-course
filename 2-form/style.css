@@ -73,32 +73,54 @@ body {
     input {
         flex: 1;
         border: 1px solid rgba(245, 245, 245, 1);
-        border-radius: 5px;
-        /*  непонятной как в форме сделать линию гребанную синию*/
+
     }
 
     input::placeholder {
         padding-left: 11px;
+
     }
+}
+
+.item0 input {
+    border-radius: 5px;
 }
 
 .item0 input::placeholder {
     color: rgba(51, 51, 51, 1);
-
+    /* border-right: 1px solid rgba(8, 159, 224, 1)  
+    если добавлять так, то у инпута справа получается синяя полоса,
+    добавил через мнемоник*/
 }
 
 .item1,
-/*  непонятной как в 1, где имя и фамилия сделать разделительную линию.там же два инпута в любом случае?*/
 .item2 {
     justify-content: right;
+    gap: 0px;
+
+
+    border-radius: 5px 0 0 5px;
 
     input {
         background-color: rgba(245, 245, 245, 1);
         color: rgba(153, 153, 153, 1);
         font-style: italic;
-        border: 1px solid rgba(245, 245, 245, 1);
+        border-right: 1px solid rgba(255, 255, 255, 1);
     }
 }
+
+#firstName {
+    border-radius: 5px 0 0 5px;
+}
+
+#secondName {
+    border-radius: 0 5px 5px 0;
+}
+
+.item2 input {
+    border-radius: 5px;
+}
+
 
 button {
     flex: auto;
