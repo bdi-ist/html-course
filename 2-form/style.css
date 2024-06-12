@@ -1,49 +1,165 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
-    background:
-        linear-gradient(45deg, #F298DE, #FDC5C5),
-        linear-gradient(45deg, #FFA5A5, #FFFFFF);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1440px;
+    height: 1024px;
+    background: linear-gradient(0deg, #F39494, #F39494),
+        linear-gradient(243.43deg, #FFA5A5 32.96%, rgba(255, 255, 255, 0) 82.03%),
+        linear-gradient(243.18deg, #FDC5C5 25.45%, rgba(242, 152, 222, 0) 100%);
 }
 
-main {
-    background-color: #FFFEFE;
+/* .main div {
 
+} */
+
+.main {
+    background: rgba(255, 254, 254, 1);
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 582px;
+    height: 573px;
+    border-radius: 10px;
+    align-items: center;
+    align-content: center;
 }
 
-h1 {
+.head h1 {
+    width: 383px;
+    height: 54px;
     color: #333333;
     font-size: 36px;
-
+    font-family: Open Sans;
+    line-height: 49.03px;
+    text-align: center;
+    margin: 72px 0 0 0;
 }
 
-div {
-    color: #666666;
+.auth {
+    font-family: Open Sans;
     font-size: 18px;
+    color: rgba(102, 102, 102, 1);
+    margin: 0 0 47px 0;
 
+    a {
+        color: rgba(8, 159, 224, 1);
+    }
 }
 
-a {
-    color: #089FE0;
-    font-size: 18px;
+.container {
+    display: flex;
+    flex-wrap: wrap;
+
+    width: 394px;
+    height: 44px;
+    border-radius: 5px 0px 0px 0px;
+    align-items: stretch;
 }
 
-label {
-    font-size: 16px;
-    color: #333333;
-    background-color: #FFFFFF;
+.item {
+    display: flex;
+    flex: auto;
+    width: 394px;
+    height: 44px;
+    gap: 22px;
+    border-radius: 5px 0px 0px 0px;
+    margin: 0 0 22px 0;
+
+    input {
+        flex: 1;
+        border: 1px solid rgba(245, 245, 245, 1);
+
+    }
+
+    input::placeholder {
+        padding-left: 11px;
+
+    }
 }
 
-input {
-    background-color: #F5F5F5;
-    font-size: 16px;
-
+.item0 input {
+    border-radius: 5px;
 }
+
+.item0 input::placeholder {
+    color: rgba(51, 51, 51, 1);
+    /* border-right: 1px solid rgba(8, 159, 224, 1)  
+    если добавлять так, то у инпута справа получается синяя полоса,
+    добавил через мнемоник*/
+}
+
+.item1,
+.item2 {
+    justify-content: right;
+    gap: 0px;
+
+
+    border-radius: 5px 0 0 5px;
+
+    input {
+        background-color: rgba(245, 245, 245, 1);
+        color: rgba(153, 153, 153, 1);
+        font-style: italic;
+        border-right: 1px solid rgba(255, 255, 255, 1);
+    }
+}
+
+#firstName {
+    border-radius: 5px 0 0 5px;
+}
+
+#secondName {
+    border-radius: 0 5px 5px 0;
+}
+
+.item2 input {
+    border-radius: 5px;
+}
+
 
 button {
-    background-color: #089FE0;
-    color: #FFFFFF;
+    flex: auto;
+    border: 3px solid rgba(255, 255, 255, 1);
+    background: rgba(8, 159, 224, 1);
+    font-family: Open Sans;
     font-size: 18px;
+    font-weight: 400;
+    line-height: 24.51px;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+    border-radius: 5px;
 }
 
-span {
-    font-size: 14px;
+.consent {
+    font-family: Open Sans;
+
+    input {
+        width: 15px;
+        height: 16px;
+        border-radius: 5px;
+        border: 1px solid rgba(238, 238, 238, 1);
+        background-color: rgba(245, 245, 245, 1);
+    }
+
+    span {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 19.07px;
+        text-align: left;
+        color: rgba(102, 102, 102, 1);
+    }
+
+    a {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 19.07px;
+        text-align: left;
+        color: rgba(8, 159, 224, 1);
+    }
+
 }

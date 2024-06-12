@@ -7,69 +7,90 @@
 }
 
 body {
+    background: linear-gradient(180deg, #374151 0%, #111827 100%);
+    width: 1440px;
+    height: 1516px;
     margin: 0;
 }
 
-nav {
-    width: 100%;
-    padding: 81px auto;
-    margin-bottom: 80px;
+
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 350px;
+    margin: 80px 0;
 }
 
-nav ul {
-    width: 100%;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-
-    li {
-        max-width: 10%;
-    }
+.header .menu {
+    display: flex;
 }
 
-.logo {
-    margin: 80px 70px 79px 11px;
+.header .menu ul {
+    display: flex;
+    gap: 70px;
+    align-items: center;
 }
+
+
 
 header input {
     width: 224px;
     height: 40px;
     border-radius: 100px;
-    margin: 71px 0px 69px 0px;
+    /* margin: 71px 0px 69px 0px; */
     border: 1px solid #1F2937;
     background-color: #1F2937;
     opacity: 60%;
 }
 
-.background {
-    background: linear-gradient(180deg, #374151 0%, #111827 100%);
-    width: 1440px;
-    height: 1516px;
+form {
+    display: flex;
+}
+
+.menu {
+    font-family: Roboto;
+    font-size: 16px;
+    color: #FFF;
+    font-weight: 400;
+    line-height: normal;
+}
+
+nav {
+    /* width: 100%; */
+
+    img {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+nav ul {
+    /* width: 100%; */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+        width: 90px;
+        height: 19px;
+    }
 }
 
 .logo {
+    display: flex;
     font-family: Roboto;
     font-size: 18px;
     color: #FFF;
     font-weight: 400;
     line-height: normal;
+    flex-basis: 100px;
+    align-items: center;
+    margin: 0 79px 0 0;
 }
 
-.menu {
-    font-family: Roboto;
-    font-size: 16px;
-    color: #FFF;
-    font-weight: 400;
-    line-height: normal;
-}
 
-.menu {
-    font-family: Roboto;
-    font-size: 16px;
-    color: #FFF;
-    font-weight: 400;
-    line-height: normal;
-}
 
 .info {
     color: #FFF;
@@ -95,6 +116,12 @@ header input {
 }
 
 .authorName {
+    display: flex;
+    width: 214px;
+    height: 53px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 0 16px;
     color: #FFF;
     font-family: Roboto;
     font-size: 16px;
@@ -102,6 +129,14 @@ header input {
     font-weight: 400;
     line-height: 28px;
     margin: 0 auto 28px auto;
+}
+
+.authorName .item1 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 214px;
+    height: calc(100% / 2);
 }
 
 .position {
