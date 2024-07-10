@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Finio</title>
-    <link rel="stylesheet" href="./styles/components.css">
-    <link rel="stylesheet" href="./styles/global.css">
-    <link rel="stylesheet" href="./styles/header.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/base.css">
+    <link rel="stylesheet" href="./styles/components.css">
+    <link rel="stylesheet" href="./styles/header.css">
 </head>
 
 <body>
@@ -20,59 +20,62 @@
 
             <nav>
                 <ul class="menu">
-                    <li class="menu__item"><a href="#">Возможности</a></li>
-                    <li class="menu__item"><a href="#">Тарифы</a></li>
-                    <li class="menu__item"><a href="#">Отзывы</a></li>
-                    <li class="menu__item"><a href="#">Поддержка клиентов</a></li>
+                    <li class="menu__item"><a href="#opportunities">Возможности</a></li>
+                    <li class="menu__item"><a href="#rates">Тарифы</a></li>
+                    <li class="menu__item"><a href="#reviews">Отзывы</a></li>
+                    <li class="menu__item"><a href="#support">Поддержка клиентов</a></li>
                 </ul>
             </nav>
             <a class="header__login" href="#" aria-hidden="true">
-                <div>Личный кабинет</div>
+                <span>Личный кабинет</span>
             </a>
             <button class="header__mobile-button" aria-expanded="false" aria-haspopup="true">
                 <img src="./img/menu.svg" alt="Мобильное меню">
             </button>
         </div>
     </header>
-    <section class="first_section">
+    <section class="fin-report">
         <div class="unit">
-            <h1 class="unit__header">Простой финансовый учёт для продавцов на маркетплейсах</h1>
-            <button class="unit__button">
-                <a href="#" aria-hidden="true"> Попробовать 14 дней бесплатно </a>
-            </button>
-            <div class="unit__logos">
-                <img src="./img/markets.svg" alt="Логотипы брендов">
+            <div class="unit__text">
+                <h1 class="unit__header">Простой финансовый учёт для продавцов на маркетплейсах</h1>
+                <button class="unit__button">
+                    <a href="#" aria-hidden="true"> Попробовать 14 дней бесплатно </a>
+                </button>
+                <div class="unit__logos">
+                    <img src="./img/markets.svg" alt="Логотипы брендов">
+                </div>
+            </div>
+            <div class="unit__picture">
+                <div></div>
+                <!-- <img src="./img/picture1.svg" alt="Картинка ноутбука"> -->
             </div>
         </div>
-        <div class="unit__picture">
-            <img src="./img/picture1.svg" alt="Картинка ноутбука">
-        </div>
-        <!-- не могу понять как наложить текст на картинку, как в макете? через margin с отрицательным значением? -->
+
     </section>
 
-    <section class="second_section">
-        <div class="advantages">
+    <section class="fin-advatages" id="fin-advatages">
+        <div class="advantage">
             <img src=" ./img/stat.svg" alt="Картинка статистики">
-            <div class="advantages_desc">
+            <div class="description">
                 Анализ прибыли по товарам и брендам
             </div>
         </div>
-        <div class="advantages">
+        <div class="advantage">
             <img src="./img/wb.svg" alt="Картинка WB">
-            <div class="advantages_desc">
+            <div class="description">
                 Автоматический учёт доходов Wildberries
             </div>
         </div>
-        <div class="advantages">
+        <div class="advantage">
             <img src="./img/rouble.svg" alt="Картинка rouble">
-            <div class="advantages_desc">
+            <div class="description">
                 От 990 рублей в месяц с полным функционалом
             </div>
         </div>
 
     </section>
     <hr class="separator">
-    <section class="section">
+    <section class="section" id="opportunities">
         <div>
             <h2>Предотвращайте кассовые разрывы</h2>
             <div class="section__text">
@@ -199,7 +202,7 @@
         <img src="./img/mobile.svg" alt="Картинка мобильной версии" class="mobile__img">
     </section>
 
-    <section class="support">
+    <section class="support" id="support">
         <img src="./img/woman.svg" alt="Картинка девушки" class="support__img">
         <div class="support__desc">
             <h2 class="support__desc-h2">Поддержка клиентов</h2>
@@ -224,7 +227,7 @@
         </div>
     </section>
 
-    <section class=" rates">
+    <section class=" rates" id="rates">
         <div class="rate">
             <h1 class="rate__h2">Тарифы</h1>
             <div class="rate__description">Все тарифы имеют полный функционал и отличаются только количеством
@@ -280,7 +283,7 @@
         </div>
     </section>
 
-    <section class="reviews">
+    <section class="reviews" id="reviews">
         <h2 class="reviews-h2">Отзывы</h2>
         <div class="reviews-div">
             <img src="./img/reviews-arrow.svg" alt="Стрелка влево" class="reviews_arrow">

@@ -1,5 +1,5 @@
 /* Unit */
-.first_section {
+.fin-report {
     display: flex;
     background: linear-gradient(173deg, var(--background-color) 70%, var(--color-text-3) 30%);
     justify-content: center;
@@ -7,9 +7,15 @@
     padding-left: 40px;
 }
 
-/* .unit {
-    padding-left: 100px;
-} */
+.unit {
+
+    position: relative;
+}
+
+.unit__text {
+    position: absolute;
+    right: 716px;
+}
 
 .unit__header {
     width: 515px;
@@ -38,12 +44,16 @@
     color: var(--color-button3-text);
 }
 
-.unit__picture img {
-    width: 921px;
-    height: 528px;
+.unit__picture {
+    background-image: url(../img/picture1.svg);
+    position: relative;
+    left: 200px;
+    width: 1039px;
+    height: 627px;
+
 }
 
-.second_section {
+.fin-advatages {
     margin: 0;
     width: 100%;
     display: flex;
@@ -52,14 +62,14 @@
 
 }
 
-.advantages {
+.advantage {
     display: flex;
     align-items: center;
     gap: 16px;
     margin: 0 24px 80px 24px;
 }
 
-.advantages_desc {
+.description {
     font-size: 24px;
     font-weight: 700;
     line-height: 28.8px;
@@ -787,7 +797,7 @@
 }
 
 @media (max-width:960px) {
-    .first_section {
+    .fin-report {
         background: linear-gradient(173deg, var(--background-color) 75%, var(--color-text-3) 25%);
         justify-content: left;
     }
@@ -805,7 +815,7 @@
         margin: 0 0 24px 0;
     }
 
-    .unit__picture img {
+    .unit__picture {
         display: none;
     }
 
@@ -818,17 +828,17 @@
 
     .unit__logos img {}
 
-    .second_section {
+    .fin-advatages {
         flex-wrap: wrap;
         justify-content: left;
         gap: 32px;
     }
 
-    .advantages {
+    .advantage {
         margin-bottom: 32px;
     }
 
-    .advantages_desc {
+    .description {
         font-size: 20px;
     }
 
@@ -1092,7 +1102,7 @@
 
 @media (max-width:480px) {
 
-    .first_section {
+    .fin-report {
         background: linear-gradient(173deg, var(--background-color) 83%, var(--color-text-3) 17%);
     }
 
@@ -1111,7 +1121,7 @@
         margin-bottom: 32px;
     }
 
-    .unit__picture img {
+    .unit__picture {
         display: none;
     }
 
@@ -1127,13 +1137,13 @@
         margin-bottom: 106px;
     }
 
-    .second_section {
+    .fin-advatages {
         flex-direction: column;
         gap: 32px;
 
     }
 
-    .advantages {
+    .advantage {
         gap: 24px;
         padding: 0 24px;
 
@@ -1143,7 +1153,7 @@
         }
     }
 
-    .advantages_desc {
+    .description {
         font-size: 18px;
     }
 
